@@ -27,7 +27,7 @@ class InfixFunction {
         Pair("Bangladesh", "Dhaka")
     )
 
-    infix fun <T> List<T>.combineWith(otherList: List<T>): List<T> {
+     infix fun <T> List<T>.combineWith(otherList: List<T>): List<T> {
         val combinedList = mutableListOf<T>()
         combinedList.addAll(this)
         combinedList.addAll(otherList)

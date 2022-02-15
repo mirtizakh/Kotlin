@@ -1,8 +1,8 @@
-import operator_overloading.NumericHolder
-import operator_overloading.checkRange
+
+import data_class.User
+import singleton_class.Database
 
 fun main(args: Array<String>) {
 
-    //val numericHolder = NumericHolder(1,2);
-    checkRange()
+ Database.getData()
 }
