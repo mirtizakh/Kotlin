@@ -13,7 +13,8 @@ public class LambdaParametersWithReturn {
             return "BMW";
         };
 
-        // But if your method implementation is only one expression java automatically read it as return value, no need to add return
+        /* But if your method implementation is only one expression java automatically
+           read it as return value, no need to add return */
 
         Printable printable2 = (s) -> "BMW "+s;
 

@@ -3,7 +3,7 @@ package infix_function
 class InfixFunction {
 
     // Kotlin allows some functions to be called without using the period and brackets. These are called infix methods,
-    // Omitting dot and parentheses
+    // Omitting dot and parentheses.
 
     val countryCities: Map<String, String> = mapOf(
         "Pakistan" to "Islamabad",
