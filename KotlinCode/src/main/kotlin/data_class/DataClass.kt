@@ -4,7 +4,7 @@ import sealed_class.Result2
 
 //    https://www.programiz.com/kotlin-programming/data-class
 
-data  class User(val name:String,val age:Int)
+data  class User(val name:String,var age:Int)
 
 /*
 Kotlin data class vs normal class.
