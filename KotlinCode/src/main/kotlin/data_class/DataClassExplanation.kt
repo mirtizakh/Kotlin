@@ -23,12 +23,17 @@ class CustomerRegular(var id: String?, var name: String?) {
     }
 }
 
-data class Customer(val id: Long, val name: String)
+data class Customer(val id: Long, val name: String){
+}
 // 1. Data class’s equals() method
 
 val customer1 = Customer(1, "John")
 val customer2 = Customer(1, "John")
 
+fun test(){
+
+    customer1.equals(customer2);
+}
 // println(customer1.equals(customer2))  // Prints true
 
 /*
