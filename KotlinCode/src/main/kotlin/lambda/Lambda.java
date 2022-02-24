@@ -33,18 +33,20 @@ public class Lambda {
          );
          */
 
-        // 2- Now we need to remove the return type , access level and function name , to make it valid Lambda syntax add an arrow
+        /* 2- Now we need to remove the return type , access level and function name ,
+         to make it valid Lambda syntax add an arrow */
          printThing(
           () -> {
             System.out.println("BMW");
              }
          );
 
-         /* Basically instead of sending an object which contains an action , we are just sending in the action itself above.
+         /* Basically instead of sending an object which contains an action ,
+            we are just sending in the action itself above.
           printThing(car);
          */
 
-        // 3- We can even simply our lambda expression
+        // 3- We can even simply write  our lambda expression
         printThing(() -> System.out.println("BMW"));
 
         // 4- We can also write like

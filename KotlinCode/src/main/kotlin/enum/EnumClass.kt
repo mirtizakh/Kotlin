@@ -33,7 +33,7 @@ enum class Days{
     THURSDAY,
     FRIDAY,
     SATURDAY;
-
+    // enum functions
     fun printFormattedDay(){
         println("Day is $this")
     }
