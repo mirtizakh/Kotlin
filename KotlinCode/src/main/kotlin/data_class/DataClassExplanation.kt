@@ -23,8 +23,10 @@ class CustomerRegular(var id: String?, var name: String?) {
     }
 }
 
-data class Customer(val id: Long, val name: String){
-}
+// The above class is equal to below data class with 1 line of code
+data class Customer(val id: Long, val name: String)
+
+
 // 1. Data class’s equals() method
 
 val customer1 = Customer(1, "John")
@@ -32,7 +34,7 @@ val customer2 = Customer(1, "John")
 
 fun test(){
 
-    customer1.equals(customer2);
+    customer1.equals(customer2)
 }
 // println(customer1.equals(customer2))  // Prints true
 
@@ -54,7 +56,7 @@ Customer Details : Customer(id=2, name=Robert)
  */
 
 // 3- Data Classes and Immutability: The copy() function
-// data classes to create immutable value objects
+// We use data classes to create immutable value objects
 
 /*
 Although the properties of a data class can be mutable (declared using var), It’s strongly recommended
@@ -108,9 +110,10 @@ val customer5 = Customer(4, "Joseph")
 Requirements for Data Classes
 Every Data Class in Kotlin needs to fulfill the following requirements -
 
-The primary constructor must have at least one parameter
-All the parameters declared in the primary constructor need to be marked as val or var.
-Data classes cannot be abstract, open, sealed or inner.
+1- The primary constructor must have at least one parameter
+2- All the parameters declared in the primary constructor need to be marked as val or var.
+   We can define variables in primary constructor of regular class without val or var but not in data class
+3- Data classes cannot be abstract, open, sealed or inner.
 Conclusion
 Data classes help us avoid a lot of common boilerplate code and make the classes clean and concise.
  */

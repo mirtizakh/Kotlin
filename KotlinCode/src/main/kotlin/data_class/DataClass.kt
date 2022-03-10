@@ -1,7 +1,5 @@
 package data_class
 
-import sealed_class.Result2
-
 //    https://www.programiz.com/kotlin-programming/data-class
 //    https://www.callicoder.com/kotlin-data-classes/
 

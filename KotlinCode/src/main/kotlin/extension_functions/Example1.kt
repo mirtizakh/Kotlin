@@ -14,7 +14,7 @@ fun printClassName(s: Shape) {
 }
 
 fun main() {
-    printClassName(Rectangle())  // --> It will print Shape
+    printClassName(Rectangle())  // --> It will print Shape , Extension function take parent class method as priority
     printClassName1(Rectangle1()) // --> It will print Rectangle
 }
 
